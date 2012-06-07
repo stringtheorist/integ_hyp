@@ -1,0 +1,6 @@
+This is a small library for the numerical evaluation of singular and
+hypersingular integrals. The method used is that developed by Kolm, 
+and Rokhlin of Yale University in their 2001 paper entitled 
+"Numerical Quadratures for Singular and Hypersingular Ingetrals" published in 
+the journal Computers and Mathematics with Applications in volume 41. 
+
