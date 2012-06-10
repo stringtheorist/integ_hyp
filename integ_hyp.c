@@ -17,7 +17,7 @@ void gauss_legendre(double x1, double x2, double* x, double* w, int n)
   int m, j, i;
   double z, z_temp, x_mid, x_length, p1, p2, p3, pd;
   
-  m = (n+1)/2; /*roots are symmetric in interval, only half need be found*/
+  m = (n+1)/2; /*roots are symmetric in interval, only half must be found*/
   x_mid = 0.5*(x1 + x2);
   x_length = 0.5*(x2 - x1);
 
@@ -47,7 +47,7 @@ void gauss_legendre(double x1, double x2, double* x, double* w, int n)
 	pd = n*(z*p1 - p2)/(z*z - 1.0);
 	z_temp = z;
 	z = z_temp - (p1/pd);
-      } while(fabs(z - z_temp) > EPS);
+      } while(fabs(z - z_temp) > PREC);
       
       x[i] = x_mid - (x_length*z);
       x[n+1 -i] = x_mid + (x_length*z);

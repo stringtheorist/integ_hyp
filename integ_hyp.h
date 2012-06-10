@@ -4,7 +4,7 @@
 #include <gsl/gsl_sf_log.h>
 #include <gsl/gsl_sf_legendre.h>
 #include <gsl/gsl_math.h>
-#define EPS 3.0e-15 /* relative precision */
+#define PREC 3.0e-15 /* precision */
 #define PI 3.141592654
 
 
